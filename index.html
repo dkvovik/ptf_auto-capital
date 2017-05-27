@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Авто Столица</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;subset=cyrillic" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/flexslider.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body class="page-main">
+    <!-- HEADER -->
+    <header>
+
+    </header>
+    <!-- /HEADER -->
+
+    <!-- MY-CAROUSEL -->
+        <!-- SLIDER -->
+        <div class="my-carousel">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active slide-1">
+                        <div class="carousel-caption">
+                            <p class="font-bebas"><i>Подменный автомобилЬ</i></p>
+                            <p>ОСТАВАЙТЕСЬ ВСЕГДА<br><span>В ДВИЖЕНИИ!</span></p>
+                            <button class="btn main-btn">Узнать подробнее</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide-2">
+                        <div class="carousel-caption">
+                            <p class="font-bebas"><i>АКЦИЯ</i></p>
+                            <p>Скачай сертификат и<br><span>получи <span class='red'>скидку 1.000 рублей </span></span></p>
+                            <button class="btn main-btn">Узнать подробнее</button>
+                        </div>
+                        <div class="carousel-caption__timer" id="clockdiv">
+                            <p>Акция ограничена!</p>
+                            <div class="time">
+                                <div class="timer__text">
+                                    <div class="time_days"></div>
+                                    Дни
+                                </div>
+                                <div class="timer__text">
+                                    <div class="time_hours"></div>
+                                    Часы
+                                </div>
+                                <div class="timer__text">
+                                    <div class="time_min"></div>
+                                    Минуты
+                                </div>
+                                <div class="timer__text">
+                                    <div class="time_sec"></div>
+                                    Секунды
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item slide-3">
+                        <div class="carousel-caption">
+                            <p class="font-bebas"><i>РАССРОЧКА</i></p>
+                            <p>РЕМОНТИРУЙ СЕГОДНЯ -<br><span>ПЛАТИ ПОТОМ!</span></p>
+                            <button class="btn main-btn">Получить сертификат на скидку</button>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- /MY-CAROUSEL -->
+        
+        <!-- POPUP -->
+
+        <div class="popup popup1">
+            <div class="popup__content">
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+               <form action="#" name="question-block">
+                    <p>получить сертификат</p>
+                    <div class="form-group clearfix">
+                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone"  placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <button type="submit" class="btn main-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup_order-service__photo">
+            <div class="popup__content">
+                <button type="button" class="close" aria-label="Close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+               <form action="#" name="question-block">
+                    <p>оценка по фото</p>
+                    <div class="form-group clearfix">
+                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone"  placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
+                    </div>
+                    <button type="submit" class="btn main-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup_order-service__master">
+            <div class="popup__content">
+                <button type="button" class="close" aria-label="Close" >
+                    <span aria-hidden="true">&times;</span>
+                </button>
+               <form action="#" name="question-block">
+                    <p>Выезд специалиста</p>
+                    <div class="form-group clearfix">
+                        <input type="text" class="form-control" id="name" placeholder="Имя">
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" id="phone"  placeholder="Телефон">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="E-mail">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="textarea" rows="3" placeholder="Комментарии"></textarea>
+                    </div>
+                    <button type="submit" class="btn main-btn">Отправить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup__sertificate">
+            <div class="popup__content">
+                <button type="button" class="close" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                <img src="img/sertificate.jpg" alt="">
+                <div class="sertificate__bottom clearfix">
+                    <button class="main-btn">Распечатать</button>
+                    <button class="main-btn">Сфотографировать на телефон</button>
+                </div>
+            </div>
+        </div>
+        <!-- /POPUP -->
+
+        <!-- OUR-SERVICES -->
+        <section class="our-services clearfix">
+            <h1>наши услуги</h1>
+            <div class="triangle"></div>
+            <div class="container ">
+                <div class="row">
+                    <article class="one-service col-12 col-sm-6 col-md-3 ">
+                        <figure class="one-service__figure">
+                            <img src="img/one-service1.jpg" alt="КУЗОВНОЙ РЕМОНТ">
+                            <figcaption>кузовной ремонт</figcaption>
+                        </figure>
+                        <div class="one-service__icon">
+                            <img src="img/one-service-icon1.png" alt="">
+                        </div>
+                        <div class="one-service__semicircle-wrap">
+                            <div class="one-service__semicircle "></div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </article>
+                    <article class="one-service col-12 col-sm-6 col-md-3">
+                        <figure class="one-service__figure">
+                            <img src="img/one-service2.jpg" alt="КУЗОВНОЙ РЕМОНТ">
+                            <figcaption>ремонт двигателя</figcaption>
+                        </figure>
+                        <div class="one-service__icon">
+                            <img src="img/one-service-icon2.png" alt="">
+                        </div>
+                        <div class="one-service__semicircle-wrap">
+                            <div class="one-service__semicircle "></div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="triangle-mobile-new"></div>
+                    </article>
+                    <article class="one-service col-12 col-sm-6 col-md-3">
+                        <figure class="one-service__figure">
+                            <img src="img/one-service3.jpg" alt="КУЗОВНОЙ РЕМОНТ">
+                            <figcaption>ремонт ходовой части</figcaption>
+                        </figure>
+                        <div class="one-service__icon">
+                            <img src="img/one-service-icon3.png" alt="">
+                        </div>
+                        <div class="one-service__semicircle-wrap">
+                            <div class="one-service__semicircle "></div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                    </article>
+                    <article class="one-service col-12 col-sm-6 col-md-3">
+                        <figure class="one-service__figure">
+                            <img src="img/one-service4.jpg" alt="КУЗОВНОЙ РЕМОНТ">
+                            <figcaption>ремонт по осаго</figcaption>
+                        </figure>
+                        <div class="one-service__icon">
+                            <img src="img/one-service-icon4.png" alt="">
+                        </div>
+                        <div class="one-service__semicircle-wrap">
+                            <div class="one-service__semicircle "></div>
+                            <i class="fa fa-angle-right" aria-hidden="true"></i>
+                        </div>
+                        <div class="triangle-mobile"></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- OUR-SERVICES -->
+
+        <!-- ORDER-SERVICE -->
+        <section class="order-service clearfix">
+            <div class="order-service-block order-service__photo">
+                <div class="triangle triangle-opacity"></div>
+                <article class="d-flex align-items-end flex-column">
+                    <h1>оценка<br> по фото</h1>
+                    <p>Отправьте фотографии<br> повреждений и<br> мы произведем оценку</p>
+                    <button type="button" class="btn main-btn mt-auto">Оценить</button>
+                </article>
+            </div>
+            <div class="order-service-block order-service__master">
+                <div class="triangle triangle-opacity"></div>
+                <article class="d-flex flex-column">
+                    <h1>выезд<br>специалиста</h1>
+                    <p>Оставьте заявку, и наш<br> менеджер свяжется с вами<br> и уточнит удобное время и<br> характер вашей проблемы</p>
+                    <button type="button" class="btn main-btn mt-auto">Вызвать специалиста</button>
+                </article>
+            </div>
+        </section>
+        <!-- /ORDER-SERVICE -->
+
+        <!-- QUESTION-BLOCK -->
+        <section class="question-block clearfix">
+            <div class="triangle"></div>
+            <div class="container form-question">
+                <div class="row justify-content-sm-center">
+                    <div class="col-12 col-lg-8 col-xl-6">
+                        <h1>остались вопросы?</h1>
+                        <h2>Закажите бесплатную консультацию</h2>
+                        <form action="#" name="question-block">
+                            <div class="form-group clearfix">
+                                <input type="text" class="form-control" id="name" placeholder="Имя">
+                                <input type="tel" class="form-control" id="phone"  placeholder="Телефон">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="E-mail">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="textarea" rows="3" placeholder="Сообщение"></textarea>
+                            </div>
+                            <button type="submit" class="btn main-btn">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /QUESTION-BLOCK -->
+
+        <!-- REVIEWS -->
+        <section class="reviews ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>ОТЗЫВЫ</h1>
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="img/reviews1.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/reviews1.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/reviews1.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/reviews1.jpg" alt="">
+                                </li>
+                                <li>
+                                    <img src="img/reviews1.jpg" alt="">
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                        <div class="flexslider">
+                            <ul class="slides">
+                                <li>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="854" height="480" src="https://www.youtube.com/embed/vzbe_JSFw3g" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="854" height="480" src="https://www.youtube.com/embed/vzbe_JSFw3g" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="854" height="480" src="https://www.youtube.com/embed/vzbe_JSFw3g" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="854" height="480" src="https://www.youtube.com/embed/vzbe_JSFw3g" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="854" height="480" src="https://www.youtube.com/embed/vzbe_JSFw3g" frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                </li>
+                                <!-- items mirrored twice, total of 12 -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /REVIEWS -->
+
+        <!-- OUR-WORKS -->
+        <section class="our-works">
+            <h1>НАШИ РАБОТЫ</h1>
+
+            <div class="our-works__top clearfix">
+                <h1 class="title"> ДО </h1>
+                <div class="top-block hidden-block">
+                    <img src="img/our-works-1.jpg" alt="">
+                </div>
+                <div class="top-block">
+                    <img src="img/our-works-2.jpg" alt="">
+                </div>
+                <div class="top-block hidden-block">
+                    <img src="img/our-works-3.jpg" alt="">
+                </div>
+            </div>
+            <div class="our-works__bottom clearfix">
+                <h1 class="title"> ПОСЛЕ </h1>
+                <div class="top-block hidden-block">
+                    <img src="img/our-works-4.jpg" alt="">
+                </div>
+                <div class="top-block">
+                    <img src="img/our-works-5.jpg" alt="">
+                </div>
+                <div class="top-block hidden-block">
+                    <img src="img/our-works-6.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="btn main-btn">Смотреть остальные работы</div>
+        </section>
+        <!-- /OUR-WORKS -->
+
+        <!-- ABOUT-COMPANY -->
+        <section class="about-company">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>о компании</h1>
+                        <p>Начало повседневной работы по формированию позиции обеспечивает широкому кругу (специалистов)
+участие в формировании позиций, занимаемых участниками в отношении поставленных задач. Таким образом укрепление и развитие структуры позволяет оценить значение систем массового участия.
+Задача организации, в особенности же постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров,соответствует насущным потребностям.</p>
+                        <p>Таким образом укрепление и развитие структуры позволяет оценить значение систем массового участия. Задача организации, в особенности же постоянный количественный рост и сфера нашей активности играет важную роль в формировании системы обучения кадров,соответствует насущным потребностям.</p>
+                        <div class="btn main-btn">Заказать звонок</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- /ABOUT-COMPANY -->
+    <!-- /CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer__social-network col-sm-12 col-md-4">
+                    <img class="logo" src="img/logo-footer.png" alt="">
+                    <h3>мы в соцсетях</h3>
+                    <div class="social-network__link">
+                        <a href="#"><img src="img/fb.jpg" alt=""></a>
+                        <a href="#"><img src="img/t.jpg" alt=""></a>
+                        <a href="#"><img src="img/in.jpg" alt=""></a>
+                        <a href="#"><img src="img/vk.jpg" alt=""></a>
+                        <a href="#"><img src="img/odnoklassniki.jpg" alt=""></a>
+                        <a href="#"><img src="img/youtube.jpg" alt=""></a>
+                        <a href="#"><img src="img/insta.jpg" alt=""></a>
+                    </div>
+                </div>
+                <div class="footer__our-services col-sm-6 col-md-4">
+                    <h3>наши услуги</h3>
+                    <ul>
+                        <li><a href="#">кузовной ремонт</a></li>
+                        <li><a href="#">ремонт двигателя</a></li>
+                        <li><a href="#">ремонт ходовой части</a></li>
+                        <li><a href="#">ремонт по осаго</a></li>
+                        <li><a href="#">ремонт в рассрочку</a></li>
+                    </ul>
+                </div>
+                <div class="footer__contacts col-12 col-sm-6 col-md-4">
+                    <h3>наши контакты</h3>
+                    <h3><span>+7 978 076 23 30</span></h3>
+                    <h3><span>+7 978 076 23 30</span></h3>
+                    <button class="btn main-btn">Заказать звонок</button>
+                    <h3 class="time-work">Пн - 09:00  Вс - 20:00</h3>
+                    <div class="footer_social-network__link">
+                        <a href="#"><img src="img/fb.jpg" alt=""></a>
+                        <a href="#"><img src="img/t.jpg" alt=""></a>
+                        <a href="#"><img src="img/in.jpg" alt=""></a>
+                        <a href="#"><img src="img/vk.jpg" alt=""></a>
+                        <a href="#"><img src="img/odnoklassniki.jpg" alt=""></a>
+                        <a href="#"><img src="img/youtube.jpg" alt=""></a>
+                        <a href="#"><img src="img/insta.jpg" alt=""></a>
+                    </div>
+                    <img class="footer__logo" src="img/logo-footer.png" alt="">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- /FOOTER -->
+
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/my-carousel.js"></script>
+    <script src="js/timer.js"></script>
+</body>
+
+</html>
